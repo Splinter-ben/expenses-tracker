@@ -1,0 +1,29 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "React NodeJs app to track your expenses",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config app",
+    "client": "npm start --prefix client",
+    "concurrently": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "keywords": [
+    "REACT",
+    "NODEJS"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.14",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
